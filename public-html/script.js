@@ -1,9 +1,10 @@
-// Simple JavaScript example for interactive resume features
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.addEventListener('click', () => {
-            section.classList.toggle('expanded');
+    const toggles = document.querySelectorAll('[data-toggle]');
+
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const content = toggle.nextElementSibling;
+            content.classList.toggle('expanded');
         });
     });
 });

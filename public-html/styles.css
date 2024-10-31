@@ -78,3 +78,18 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
+/* Hide all content sections by default */
+.content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Show content when expanded */
+.content.expanded {
+    display: block;
+}
+
+/* Optional: Add a cursor pointer to the headers to indicate they're clickable */
+[data-toggle] {
+    cursor: pointer;
+}
